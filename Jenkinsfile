@@ -15,7 +15,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh './test.sh'
+        sh '/var/jenkins_home/workspace/feifeiBox_master/test.sh'
       }
     }
 
