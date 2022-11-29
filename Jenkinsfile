@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'ls'
         sh 'chmod +x test.sh'
-        sh './test.sh '
+        sh 'bash ./test.sh '
       }
     }
 
