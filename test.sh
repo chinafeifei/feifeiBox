@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin sh
 
 set -e
 File_result=$HOME/"$(date +%H%M%S)"_result.txt
