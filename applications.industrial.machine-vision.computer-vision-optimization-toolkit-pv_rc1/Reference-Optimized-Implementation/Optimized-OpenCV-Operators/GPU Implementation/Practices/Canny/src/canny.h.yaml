@@ -1,0 +1,342 @@
+---
+MainSourceFile:  '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/migration/canny.h'
+Replacements:
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          20
+    Length:          26
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          193
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          321
+    Length:          0
+    ReplacementText: ",\n                           sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          324
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          503
+    Length:          0
+    ReplacementText: ",\n                        sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          506
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          638
+    Length:          0
+    ReplacementText: ",\n                               sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          641
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.h'
+    Offset:          800
+    Length:          0
+    ReplacementText: ",\n                            sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest: []
+DpctVersion:     2021.4.0
+MainHelperFileName: dpct
+USMLevel:        restricted
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dev_mgr
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     device_ext
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     exception_handler
+      SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     get_tid
+      SubFeatureMap:   {}
+  dpct.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  memory.hpp:
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_3d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    mem_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     mem_mgr
+      SubFeatureMap:
+        mem_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_get_map_iterator:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_is_device_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_translate_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    pitched_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:
+        pitched_data_get_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        pitched_data_get_pitch:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        pitched_data_get_y:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    pitched_data_1:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:   {}
+    typedef_buffer_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     buffer_t
+      SubFeatureMap:   {}
+    typedef_byte_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     byte_t
+      SubFeatureMap:   {}
+...

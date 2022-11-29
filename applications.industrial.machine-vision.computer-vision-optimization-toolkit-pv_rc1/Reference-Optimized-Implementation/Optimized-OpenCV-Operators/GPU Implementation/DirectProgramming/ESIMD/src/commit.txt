@@ -1,0 +1,23 @@
+# All *.cpp source files copied based on
+# https://github.com/intel/llvm-test-suite/commit/$base_commit
+# To dowload all files listed below, run shell command:
+# bash commit.txt | xargs wget
+
+base_commit=18c2f11ee2f6a59883ca4b4809af646e8cf39691
+base_rawurl=https://raw.githubusercontent.com/intel/llvm-test-suite/$base_commit/SYCL/ESIMD/
+
+echo "$base_rawurl/esimd_test_utils.hpp"
+
+echo "$base_rawurl/histogram.cpp"
+echo "$base_rawurl/histogram_256_slm.cpp"
+echo "$base_rawurl/histogram_256_slm_spec_2020.cpp"
+echo "$base_rawurl/histogram_2d.cpp"
+echo "$base_rawurl/histogram_raw_send.cpp"
+
+echo "$base_rawurl/matrix_transpose.cpp"
+echo "$base_rawurl/matrix_transpose2.cpp"
+echo "$base_rawurl/matrix_transpose_glb.cpp"
+echo "$base_rawurl/matrix_transpose_usm.cpp"
+
+# To build all *cpp source files, run
+# find ./ -name "*.cpp" | while read line;do filename=`basename $line`; name=${filename%.*}; clang++ -fsycl ${name}.cpp -o $name.out ;done

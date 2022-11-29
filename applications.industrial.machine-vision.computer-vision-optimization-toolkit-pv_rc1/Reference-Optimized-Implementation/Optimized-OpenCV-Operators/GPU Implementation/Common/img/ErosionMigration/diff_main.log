@@ -1,0 +1,100 @@
+diff --git a/main.cpp.dp.cpp b/main.cpp.dp.cpp
+index 3fdb299..8224c8a 100644
+--- a/main.cpp.dp.cpp
++++ b/main.cpp.dp.cpp
+@@ -12,8 +12,13 @@
+ #include <ctime>
+ 
+ // #include "erosionFuncTemplate.h"
+-#include "erosionCPU.h"
++// #include "erosionCPU.h"
+ #include "erosion.h"
++#include <opencv2/opencv.hpp>
++#include <opencv2/core.hpp>
++#include <opencv2/imgcodecs.hpp>
++
++using namespace cv;
+ 
+ inline int cudaDeviceInit(int argc, const char **argv)
+ {
+@@ -57,7 +62,19 @@ int main(int argc, char *argv[])
+     int * dimage_src, *dimage_dst, *dimage_tmp;
+     int * himage_src, *himage_dst, *himage_tmp;
+     // Width and height of the image
+-    int width = 1280, height = 1024, radio = 5;
++    cv::Mat srcMat = imread("resource/lena.ppm", 0);
++    if (srcMat.empty()) {
++        printf("srcMat is empty\n");
++        return -1;
++    }
++    cv::Mat dstMat = srcMat.clone();
++    cv::Mat dstMat_dpcpp = srcMat.clone();
++
++    // Property of srcMat
++    int width =  srcMat.cols;
++    int height = srcMat.rows;
++    int radio = 2;
++    // int width = 1280, height = 1024, radio = 5;
+ 
+     /*
+     DPCT1003:14: Migrated API does not return error code. (*, 0) is inserted.
+@@ -97,19 +114,33 @@ int main(int argc, char *argv[])
+           sycl::malloc_host<int>(width * height, dpct::get_default_queue());
+ 
+     // Randomly populate the image
+-    populateImage(himage_src, width, height);
++    // populateImage(himage_src, width, height);
++    for (int i = 0; i < height; i++) {
++        for (int j = 0; j < width; j++) {
++            himage_src[i * width + j] = srcMat.data[i * width + j];
++        }
++    }
+ 
+     std::chrono::time_point<std::chrono::system_clock> start, end;
+     start = std::chrono::system_clock::now();
+  
+ //     for (radio = 2; radio <= 15; radio++) {
+         // Calculate the eroded image on the host
+-        erosionCPU(himage_src, himage_dst, width, height, radio);
++        // erosionCPU(himage_src, himage_dst, width, height, radio);
++        cv::Mat element = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(2*radio+1, 2*radio+1));
++        cv::Point2i erode_point(-1, -1) ;
++	    cv::erode(srcMat, dstMat, element, erode_point, 1, BORDER_REPLICATE);
+ 
+         end = std::chrono::system_clock::now(); 
+         std::chrono::duration<double> elapsed_seconds = end-start;
+         std::cout << "Erosion CPU: " << elapsed_seconds.count() << "s\n";
+ 
++        for (int i = 0; i < height; i++) {
++            for (int j = 0; j < width; j++) {
++                himage_dst[i * width + j] = dstMat.data[i * width + j];
++            }
++        }
++
+       //   start = std::chrono::system_clock::now();
+       //   // Copy the image from the host to the GPU
+       //   /*
+@@ -223,6 +254,11 @@ int main(int argc, char *argv[])
+ 
+ 
+     std::cout << "Great!!" << std::endl;
++    for (int i = 0; i < height; i++) {
++        for (int j = 0; j < width; j++) {
++            dstMat_dpcpp.data[i * width + j] = himage_tmp[i * width + j];
++        }
++    }
+ 
+     sycl::free(dimage_src, dpct::get_default_queue());
+     sycl::free(dimage_dst, dpct::get_default_queue());
+@@ -231,5 +267,11 @@ int main(int argc, char *argv[])
+     sycl::free(himage_dst, dpct::get_default_queue());
+     sycl::free(himage_tmp, dpct::get_default_queue());
+     dpct::get_current_device().reset();
++
++    cvtColor(dstMat, dstMat, COLOR_GRAY2BGR);
++    cvtColor(dstMat_dpcpp, dstMat_dpcpp, COLOR_GRAY2BGR);
++    cv::imwrite("./resource/dstMat.ppm", dstMat);
++    cv::imwrite("./resource/dstMat_dpcpp.ppm", dstMat_dpcpp);
++
+     return 0;
+ }

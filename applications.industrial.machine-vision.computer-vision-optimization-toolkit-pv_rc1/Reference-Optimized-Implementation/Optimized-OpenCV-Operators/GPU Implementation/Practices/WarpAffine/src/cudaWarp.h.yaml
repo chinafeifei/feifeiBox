@@ -1,0 +1,295 @@
+---
+MainSourceFile:  '/home/intel/workspace/jetson-utils/cuda/dpct_output/cudaWarp.h'
+Replacements:
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1198
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1468
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1496
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1511
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1879
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1907
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          1922
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          2291
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          2324
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          2339
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          2717
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          2750
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          2765
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3094
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3125
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3140
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3202
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3229
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3259
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3500
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3531
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3546
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3608
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3635
+    Length:          6
+    ReplacementText: 'sycl::float2'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3665
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3845
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3874
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          3889
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          4101
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          4130
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp.h'
+    Offset:          4145
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest: []
+DpctVersion:     2021.4.0
+MainHelperFileName: dpct
+USMLevel:        restricted
+FeatureMap:
+  device.hpp:
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+...

@@ -1,0 +1,1093 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          49
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          88
+    Length:          26
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          114
+    Length:          38
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          169
+    Length:          0
+    ReplacementText: "\n#include <chrono>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          355
+    Length:          0
+    ReplacementText: "\n dpct::device_ext &dev_ct1 = dpct::get_current_device();\n sycl::queue &q_ct1 = dev_ct1.default_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1015
+    Length:          11
+    ReplacementText: 'sycl::event'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1039
+    Length:          0
+    ReplacementText: "\n\tstd::chrono::time_point<std::chrono::steady_clock> start_ct1;\n\tstd::chrono::time_point<std::chrono::steady_clock> stop_ct1;"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1040
+    Length:          26
+    ReplacementText: "\t/*\n\tDPCT1026:0: The call to cudaEventCreate was removed because this call is redundant in DPC++.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1066
+    Length:          25
+    ReplacementText: "\t/*\n\tDPCT1026:1: The call to cudaEventCreate was removed because this call is redundant in DPC++.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1123
+    Length:          69
+    ReplacementText: 'in = (uint8_t *)sycl::malloc_device(sizeof(uint8_t) * image_height * image_width, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1195
+    Length:          70
+    ReplacementText: 'out = (uint8_t *)sycl::malloc_device(sizeof(uint8_t) * image_height * image_width, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1268
+    Length:          81
+    ReplacementText: 'gradient_pixels = (double *)sycl::malloc_device(sizeof(double) * image_height * image_width, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1352
+    Length:          75
+    ReplacementText: 'out_week = (uint8_t *)sycl::malloc_device(sizeof(uint8_t) * image_height * image_width, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1430
+    Length:          76
+    ReplacementText: 'max_pixels = (double *)sycl::malloc_device(sizeof(double) * image_height * image_width, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1509
+    Length:          81
+    ReplacementText: 'segment_pixels = (uint8_t *)sycl::malloc_device(sizeof(uint8_t) * image_height * image_width, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1593
+    Length:          84
+    ReplacementText: 'gaussian_kernel_gpu = (double *)sycl::malloc_device(sizeof(double) * KERNEL_SIZE * KERNEL_SIZE, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1680
+    Length:          63
+    ReplacementText: 'sobel_kernel_x_gpu = (int8_t *)sycl::malloc_device(sizeof(int8_t) * 3 * 3, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1746
+    Length:          63
+    ReplacementText: 'sobel_kernel_y_gpu = (int8_t *)sycl::malloc_device(sizeof(int8_t) * 3 * 3, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1812
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1012:2: Detected kernel execution time measurement pattern and generated an initial code for time measurements in SYCL. You can change the way time is measured depending on your goals.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1813
+    Length:          25
+    ReplacementText: 'start_ct1 = std::chrono::steady_clock::now()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1900
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1971
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          1999
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2090
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2118
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2207
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2235
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2324
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2349
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2467
+    Length:          12
+    ReplacementText: 'sycl::queue'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2480
+    Length:          0
+    ReplacementText: '*'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2489
+    Length:          25
+    ReplacementText: 'stream = dev_ct1.create_queue()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2540
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:4: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2541
+    Length:          122
+    ReplacementText: "stop = stream->parallel_for(\n\t  sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) * sycl::range<3>(1, 1, thd_per_blk), sycl::range<3>(1, 1, thd_per_blk)), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    apply_gaussian_filter(out, in, image_width, image_height, gaussian_kernel_gpu, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2663
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2691
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:5: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2692
+    Length:          169
+    ReplacementText: "stop = stream->parallel_for(\n\t  sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) * sycl::range<3>(1, 1, thd_per_blk), sycl::range<3>(1, 1, thd_per_blk)), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    apply_sobel_filter(gradient_pixels, segment_pixels, out, image_width, image_height, sobel_kernel_x_gpu, sobel_kernel_y_gpu, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2861
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2864
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2947
+    Length:          26
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          2974
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3020
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:6: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3021
+    Length:          141
+    ReplacementText: "stop = stream->parallel_for(\n\t  sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) * sycl::range<3>(1, 1, thd_per_blk), sycl::range<3>(1, 1, thd_per_blk)), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    apply_non_max_suppression(max_pixels, gradient_pixels, segment_pixels, image_width, image_height, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3162
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3188
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:7: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3189
+    Length:          150
+    ReplacementText: "stop = stream->parallel_for(\n\t  sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) * sycl::range<3>(1, 1, thd_per_blk), sycl::range<3>(1, 1, thd_per_blk)), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    apply_double_threshold(out, out_week, max_pixels, strong_threshold, weak_threshold, image_width, image_height, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3339
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3628
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3691
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3765
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3794
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3872
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3897
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3900
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1012:3: Detected kernel execution time measurement pattern and generated an initial code for time measurements in SYCL. You can change the way time is measured depending on your goals.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3901
+    Length:          24
+    ReplacementText: "stop.wait();\n\tstop_ct1 = std::chrono::steady_clock::now()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3939
+    Length:          29
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3970
+    Length:          12
+    ReplacementText: 'sycl::free(in, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          3985
+    Length:          13
+    ReplacementText: 'sycl::free(out, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4001
+    Length:          25
+    ReplacementText: 'sycl::free(gradient_pixels, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4029
+    Length:          20
+    ReplacementText: 'sycl::free(max_pixels, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4052
+    Length:          24
+    ReplacementText: 'sycl::free(segment_pixels, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4079
+    Length:          29
+    ReplacementText: 'sycl::free(gaussian_kernel_gpu, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4111
+    Length:          28
+    ReplacementText: 'sycl::free(sobel_kernel_x_gpu, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4142
+    Length:          28
+    ReplacementText: 'sycl::free(sobel_kernel_y_gpu, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4173
+    Length:          18
+    ReplacementText: 'sycl::free(out_week, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4195
+    Length:          43
+    ReplacementText: 'elapsed = std::chrono::duration<float, std::milli>(stop_ct1 - start_ct1).count()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4240
+    Length:          26
+    ReplacementText: "\t/*\n\tDPCT1026:8: The call to cudaEventDestroy was removed because this call is redundant in DPC++.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4266
+    Length:          25
+    ReplacementText: "\t/*\n\tDPCT1026:9: The call to cudaEventDestroy was removed because this call is redundant in DPC++.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4435
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4578
+    Length:          0
+    ReplacementText: ",\n                           sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4663
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4676
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          4689
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          5718
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          5911
+    Length:          0
+    ReplacementText: ",\n                        sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          5938
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          5951
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          5964
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          7196
+    Length:          64
+    ReplacementText: 'sycl::sqrt((convolve_X * convolve_X) + (convolve_Y * convolve_Y))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          7281
+    Length:          34
+    ReplacementText: 'sycl::atan2(convolve_Y, convolve_X)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          7910
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          8055
+    Length:          0
+    ReplacementText: ",\n                               sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          8070
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          8083
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          8096
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          9273
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          9440
+    Length:          0
+    ReplacementText: ",\n                            sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          9455
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          9468
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Offset:          9481
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/main.cpp'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/main.cpp'
+    Offset:          168
+    Length:          26
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/main.cpp'
+    Offset:          194
+    Length:          38
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+    Digest:          198c7cd4f881e75095c8f1d5820ceb03
+  - MainSourceFile:  '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/main.cpp'
+    Digest:          b70b04ec59056dc7750021ca80310ba5
+DpctVersion:     2021.4.0
+MainHelperFileName: dpct
+USMLevel:        restricted
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dev_mgr
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     device_ext
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     exception_handler
+      SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     get_tid
+      SubFeatureMap:   {}
+  dpct.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  memory.hpp:
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_3d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    mem_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     mem_mgr
+      SubFeatureMap:
+        mem_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_get_map_iterator:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_is_device_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_translate_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    pitched_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:
+        pitched_data_get_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        pitched_data_get_pitch:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        pitched_data_get_y:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    pitched_data_1:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:   {}
+    typedef_buffer_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     buffer_t
+      SubFeatureMap:   {}
+    typedef_byte_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/canny-edge-parallel/cudaCanny/cudaCanny/canny.cu'
+      FeatureName:     byte_t
+      SubFeatureMap:   {}
+...

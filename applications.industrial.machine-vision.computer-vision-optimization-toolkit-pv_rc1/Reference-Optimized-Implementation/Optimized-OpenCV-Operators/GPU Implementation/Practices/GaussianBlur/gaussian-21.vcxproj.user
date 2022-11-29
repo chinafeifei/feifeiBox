@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerEnvironment>SYCL_DEVICE_FILTER=opencl:gpu
+PATH=C:\Program Files (x86)\Intel\openvino_2021\opencv\bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2022.1.0\windows\bin;%PATH%
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>SYCL_DEVICE_FILTER=opencl:gpu
+PATH=C:\Program Files (x86)\Intel\openvino_2021\opencv\bin;C:\Program Files (x86)\Intel\oneAPI\compiler\2022.1.0\windows\bin;%PATH%</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

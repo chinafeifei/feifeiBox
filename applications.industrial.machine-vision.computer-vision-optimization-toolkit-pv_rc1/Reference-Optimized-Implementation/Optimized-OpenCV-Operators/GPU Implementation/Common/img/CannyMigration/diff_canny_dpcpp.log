@@ -1,0 +1,78 @@
+diff --git a/cudaCanny/cudaCanny/migration/canny.dp.cpp b/cudaCanny/cudaCanny/migration/canny.dp.cpp
+index 4c919a3..84292dc 100644
+--- a/cudaCanny/cudaCanny/migration/canny.dp.cpp
++++ b/cudaCanny/cudaCanny/migration/canny.dp.cpp
+@@ -100,7 +100,8 @@ void apply_canny(uint8_t *final_pixels, uint8_t *week_pixels,
+         limit. To get the device limit, query info::device::max_work_group_size.
+         Adjust the workgroup size if needed.
+         */
+-        stop = stream->parallel_for(
++        q_ct1.submit([&](sycl::handler &cgh){
++            cgh.parallel_for(
+             sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) *
+                                   sycl::range<3>(1, 1, thd_per_blk),
+                               sycl::range<3>(1, 1, thd_per_blk)),
+@@ -108,13 +109,15 @@ void apply_canny(uint8_t *final_pixels, uint8_t *week_pixels,
+                     apply_gaussian_filter(out, in, image_width, image_height,
+                                           gaussian_kernel_gpu, item_ct1);
+             });
++        }).wait();
+         // 2.apply sobel kernels
+         /*
+         DPCT1049:5: The workgroup size passed to the SYCL kernel may exceed the
+         limit. To get the device limit, query info::device::max_work_group_size.
+         Adjust the workgroup size if needed.
+         */
+-        stop = stream->parallel_for(
++        q_ct1.submit([&](sycl::handler &cgh){
++            cgh.parallel_for(
+             sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) *
+                                   sycl::range<3>(1, 1, thd_per_blk),
+                               sycl::range<3>(1, 1, thd_per_blk)),
+@@ -124,6 +127,7 @@ void apply_canny(uint8_t *final_pixels, uint8_t *week_pixels,
+                                        sobel_kernel_x_gpu, sobel_kernel_y_gpu,
+                                        item_ct1);
+             });
++        }).wait();
+         q_ct1
+             .memcpy(max_pixels, gradient_pixels,
+                     image_height * image_width * sizeof(double))
+@@ -134,7 +138,8 @@ void apply_canny(uint8_t *final_pixels, uint8_t *week_pixels,
+         limit. To get the device limit, query info::device::max_work_group_size.
+         Adjust the workgroup size if needed.
+         */
+-        stop = stream->parallel_for(
++        q_ct1.submit([&](sycl::handler &cgh){
++            cgh.parallel_for(
+             sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) *
+                                   sycl::range<3>(1, 1, thd_per_blk),
+                               sycl::range<3>(1, 1, thd_per_blk)),
+@@ -143,21 +148,24 @@ void apply_canny(uint8_t *final_pixels, uint8_t *week_pixels,
+                                               segment_pixels, image_width,
+                                               image_height, item_ct1);
+             });
++        }).wait();
+         // 4. double threshold
+         /*
+         DPCT1049:7: The workgroup size passed to the SYCL kernel may exceed the
+         limit. To get the device limit, query info::device::max_work_group_size.
+         Adjust the workgroup size if needed.
+         */
+-        stop = stream->parallel_for(
++        q_ct1.submit([&](sycl::handler &cgh){
++            cgh.parallel_for(
+             sycl::nd_range<3>(sycl::range<3>(1, 1, num_blks) *
+                                   sycl::range<3>(1, 1, thd_per_blk),
+                               sycl::range<3>(1, 1, thd_per_blk)),
+             [=](sycl::nd_item<3> item_ct1) {
+-                    apply_double_threshold(out, out_week, max_pixels,
+-                                           strong_threshold, weak_threshold,
+-                                           image_width, image_height, item_ct1);
++                    apply_double_threshold(out, out_week, max_pixels, strong_threshold,
++                                           weak_threshold, image_width,
++                                           image_height, item_ct1);
+             });
++        }).wait();
+         // // 5. edges with hysteresis
+ 	// cudaMemcpy(out_week, out, image_height * image_width * sizeof(uint8_t), cudaMemcpyDeviceToDevice);
+ 	// apply_edge_hysteresis <<<num_blks, thd_per_blk, grid, stream >>> (out_week, out, image_width, image_height);

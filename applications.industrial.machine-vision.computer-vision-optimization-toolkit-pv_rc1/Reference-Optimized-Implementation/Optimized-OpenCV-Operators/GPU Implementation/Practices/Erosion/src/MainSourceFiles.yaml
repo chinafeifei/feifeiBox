@@ -1,0 +1,1742 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          25
+    Length:          0
+    ReplacementText: "\n#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          161
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          250
+    Length:          0
+    ReplacementText: ",\n                        sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          266
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          279
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          292
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          317
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          330
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          343
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          442
+    Length:          17
+    ReplacementText: 'sycl::max((int)(y - radio), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          486
+    Length:          26
+    ReplacementText: 'sycl::min((int)(height - 1), (int)(y + radio))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          541
+    Length:          17
+    ReplacementText: 'sycl::max((int)(x - radio), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          585
+    Length:          25
+    ReplacementText: 'sycl::min((int)(width - 1), (int)(x + radio))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          747
+    Length:          30
+    ReplacementText: 'sycl::min(value, src[i * width + j])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          910
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          921
+    Length:          6
+    ReplacementText: 1, 32, 32
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          934
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          944
+    Length:          59
+    ReplacementText: '1, ceil((float)height / block[1]), ceil((float)width / block[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1006
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:0: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1010
+    Length:          66
+    ReplacementText: "dpct::get_default_queue().parallel_for(\n      sycl::nd_range<3>(grid * block, block), \n      [=](sycl::nd_item<3> item_ct1) {\n        NaiveErosionKernel(src, dst, width, height, radio, item_ct1);\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1076
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1078
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:1: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1082
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1104
+    Length:          23
+    ReplacementText: '(dpct::get_current_device().queues_wait_and_throw(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1185
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1268
+    Length:          0
+    ReplacementText: ",\n                  sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1284
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1297
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1310
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1335
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1348
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1361
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1460
+    Length:          17
+    ReplacementText: 'sycl::max((int)(y - radio), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1504
+    Length:          26
+    ReplacementText: 'sycl::min((int)(height - 1), (int)(y + radio))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1614
+    Length:          30
+    ReplacementText: 'sycl::min(value, src[i * width + x])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1687
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1770
+    Length:          0
+    ReplacementText: ",\n                  sycl::nd_item<3> item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1786
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1799
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1812
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1837
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1850
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1863
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          1962
+    Length:          17
+    ReplacementText: 'sycl::max((int)(x - radio), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2006
+    Length:          25
+    ReplacementText: 'sycl::min((int)(width - 1), (int)(x + radio))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2115
+    Length:          30
+    ReplacementText: 'sycl::min(value, src[y * width + j])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2277
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2278
+    Length:          0
+    ReplacementText: "\n    dpct::device_ext &dev_ct1 = dpct::get_current_device();\n    sycl::queue &q_ct1 = dev_ct1.default_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2283
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2294
+    Length:          6
+    ReplacementText: 1, 16, 16
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2307
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2317
+    Length:          59
+    ReplacementText: '1, ceil((float)height / block[1]), ceil((float)width / block[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2379
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:2: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2383
+    Length:          61
+    ReplacementText: "dpct::get_default_queue().parallel_for(\n      sycl::nd_range<3>(grid * block, block), \n      [=](sycl::nd_item<3> item_ct1) {\n        ErosionStep1(src, temp, width, height, radio, item_ct1);\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2444
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2446
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:4: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2450
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2472
+    Length:          23
+    ReplacementText: '(dpct::get_current_device().queues_wait_and_throw(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2497
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:3: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2501
+    Length:          61
+    ReplacementText: "dpct::get_default_queue().parallel_for(\n      sycl::nd_range<3>(grid * block, block), \n      [=](sycl::nd_item<3> item_ct1) {\n        ErosionStep2(temp, dst, width, height, radio, item_ct1);\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2562
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2564
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:5: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2578
+    Length:          23
+    ReplacementText: '(dpct::get_current_device().queues_wait_and_throw(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2604
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2680
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2807
+    Length:          0
+    ReplacementText: ",\n                        sycl::nd_item<3> item_ct1, uint8_t *dpct_local"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2815
+    Length:          29
+    ReplacementText: 'auto smem = (int *)dpct_local;'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2858
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2884
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2910
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          2935
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3029
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3057
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:6: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3156
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3199
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:7: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3340
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3448
+    Length:          38
+    ReplacementText: 'sycl::min(val, smem_thread[yy * item_ct1.get_local_range(2)])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3527
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3640
+    Length:          0
+    ReplacementText: ",\n                        sycl::nd_item<3> item_ct1, uint8_t *dpct_local"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3648
+    Length:          29
+    ReplacementText: 'auto smem = (int *)dpct_local;'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3691
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3717
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3743
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3768
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3862
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3890
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:8: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          3989
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4032
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:9: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4163
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4279
+    Length:          25
+    ReplacementText: 'sycl::min(val, smem_thread[xx])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4440
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4441
+    Length:          0
+    ReplacementText: "\n    dpct::device_ext &dev_ct1 = dpct::get_current_device();\n    sycl::queue &q_ct1 = dev_ct1.default_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4488
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4500
+    Length:          28
+    ReplacementText: '1, tile_h, tile_w + (2 * radio)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4535
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4546
+    Length:          57
+    ReplacementText: '1, ceil((float)height / tile_h), ceil((float)width / tile_w)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4606
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:10: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4610
+    Length:          115
+    ReplacementText: "dpct::get_default_queue().submit(\n      [&](sycl::handler &cgh) {\n        /*\n        DPCT1083:26: The size of local memory in the migrated code may be different from the original code. Check that the allocated memory size in the migrated code is correct.\n        */\n        sycl::accessor<uint8_t, 1, sycl::access_mode::read_write, sycl::access::target::local> dpct_local_acc_ct1(sycl::range<1>(block2[1]*block2[2]*sizeof(int)), cgh);\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(grid2 * block2, block2), \n          [=](sycl::nd_item<3> item_ct1) {\n            ErosionSharedStep1(src, temp, radio, width, height, tile_w, tile_h, item_ct1, dpct_local_acc_ct1.get_pointer());\n          });\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4725
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4727
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:12: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4731
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4753
+    Length:          23
+    ReplacementText: '(dpct::get_current_device().queues_wait_and_throw(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4815
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4827
+    Length:          28
+    ReplacementText: '1, tile_h + (2 * radio), tile_w'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4862
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4873
+    Length:          57
+    ReplacementText: '1, ceil((float)height / tile_h), ceil((float)width / tile_w)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4933
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:11: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          4937
+    Length:          120
+    ReplacementText: "dpct::get_default_queue().submit(\n      [&](sycl::handler &cgh) {\n        /*\n        DPCT1083:27: The size of local memory in the migrated code may be different from the original code. Check that the allocated memory size in the migrated code is correct.\n        */\n        sycl::accessor<uint8_t, 1, sycl::access_mode::read_write, sycl::access::target::local> dpct_local_acc_ct1(sycl::range<1>(block3[1]*block3[2]*sizeof(int)), cgh);\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(grid3 * block3, block3), \n          [=](sycl::nd_item<3> item_ct1) {\n            ErosionSharedStep2(temp, src, dst, radio, width, height, tile_w, tile_h, item_ct1, dpct_local_acc_ct1.get_pointer());\n          });\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          5057
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          5059
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:13: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          5073
+    Length:          23
+    ReplacementText: '(dpct::get_current_device().queues_wait_and_throw(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Offset:          5099
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          61
+    Length:          0
+    ReplacementText: "\n#include <oneapi/mkl.hpp>\n#include <oneapi/mkl/rng/device.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          62
+    Length:          26
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          88
+    Length:          20
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          308
+    Length:          32
+    ReplacementText: 'deviceCount = dpct::dev_mgr::instance().device_count()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          491
+    Length:          13
+    ReplacementText: 'dpct::dev_mgr::instance().select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1416
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:14: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1421
+    Length:          53
+    ReplacementText: '(dimage_src = sycl::malloc_device<int>(width * height, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1477
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:15: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1482
+    Length:          53
+    ReplacementText: '(dimage_dst = sycl::malloc_device<int>(width * height, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1538
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:16: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1543
+    Length:          53
+    ReplacementText: '(dimage_tmp = sycl::malloc_device<int>(width * height, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1599
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:17: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1604
+    Length:          57
+    ReplacementText: '(himage_src = sycl::malloc_host<int>(width * height, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1664
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:18: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1669
+    Length:          57
+    ReplacementText: '(himage_dst = sycl::malloc_host<int>(width * height, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1729
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1003:19: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          1734
+    Length:          57
+    ReplacementText: '(himage_tmp = sycl::malloc_host<int>(width * height, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2445
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:20: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2454
+    Length:          10
+    ReplacementText: '(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2517
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2542
+    Length:          0
+    ReplacementText: '.wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2711
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:21: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2720
+    Length:          10
+    ReplacementText: '(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2783
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          2808
+    Length:          0
+    ReplacementText: '.wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3159
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:22: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3168
+    Length:          10
+    ReplacementText: '(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3231
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3256
+    Length:          0
+    ReplacementText: '.wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3387
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:23: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3396
+    Length:          10
+    ReplacementText: '(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3459
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3484
+    Length:          0
+    ReplacementText: '.wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3839
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:24: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3848
+    Length:          10
+    ReplacementText: '(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3911
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          3936
+    Length:          0
+    ReplacementText: '.wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          4073
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:25: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          4082
+    Length:          10
+    ReplacementText: '(dpct::get_default_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          4145
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          4170
+    Length:          0
+    ReplacementText: '.wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6662
+    Length:          20
+    ReplacementText: 'sycl::free(dimage_src, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6688
+    Length:          20
+    ReplacementText: 'sycl::free(dimage_dst, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6714
+    Length:          20
+    ReplacementText: 'sycl::free(dimage_tmp, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6740
+    Length:          24
+    ReplacementText: 'sycl::free(himage_src, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6770
+    Length:          24
+    ReplacementText: 'sycl::free(himage_dst, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6800
+    Length:          24
+    ReplacementText: 'sycl::free(himage_tmp, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Offset:          6830
+    Length:          17
+    ReplacementText: 'dpct::get_current_device().reset()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+    Digest:          ee771d168343c0a53238aa145d7c884b
+  - MainSourceFile:  '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+    Digest:          81688bacd6a9eb493dff60d306015a08
+DpctVersion:     2021.4.0
+MainHelperFileName: dpct
+USMLevel:        restricted
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dev_mgr
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_select_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     device_ext
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_reset:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     exception_handler
+      SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/erosion.cu'
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     get_tid
+      SubFeatureMap:   {}
+  dpct.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  memory.hpp:
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_3d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    mem_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     mem_mgr
+      SubFeatureMap:
+        mem_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_get_map_iterator:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_is_device_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        mem_mgr_translate_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    pitched_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     pitched_data
+      SubFeatureMap:
+        pitched_data_get_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        pitched_data_get_pitch:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        pitched_data_get_y:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    pitched_data_1:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     pitched_data
+      SubFeatureMap:   {}
+    typedef_buffer_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     buffer_t
+      SubFeatureMap:   {}
+    typedef_byte_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/Projects/cuda-samples-migrate/CUDA-dilation-and-erosion-filters/main.cpp'
+      FeatureName:     byte_t
+      SubFeatureMap:   {}
+...

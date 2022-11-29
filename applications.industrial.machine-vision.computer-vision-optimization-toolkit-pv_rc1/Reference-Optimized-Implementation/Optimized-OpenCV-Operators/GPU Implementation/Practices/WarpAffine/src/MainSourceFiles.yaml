@@ -1,0 +1,928 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1170
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1262
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1355
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1366
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1377
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1387
+    Length:          0
+    ReplacementText: ', sycl::nd_item<3> item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1408
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1421
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1434
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1463
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1476
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1489
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1567
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1580
+    Length:          11
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1620
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1637
+    Length:          11
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1653
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1661
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1668
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1676
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1683
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1691
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1707
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1715
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1722
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1730
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1737
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1745
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1761
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1769
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1776
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1784
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1791
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1799
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1831
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1858
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1879
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1889
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1903
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          1913
+    Length:          1
+    ReplacementText: 'w()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2218
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2485
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2516
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2547
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2638
+    Length:          1
+    ReplacementText: 'x()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2675
+    Length:          1
+    ReplacementText: 'y()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2712
+    Length:          1
+    ReplacementText: 'z()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2774
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2807
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2822
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2937
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          2975
+    Length:          29
+    ReplacementText: '17'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3052
+    Length:          21
+    ReplacementText: '1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3104
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3213
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3227
+    Length:          4
+    ReplacementText: 1, 8, 8
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3242
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3255
+    Length:          51
+    ReplacementText: '1, iDivUp(height,blockDim[1]), iDivUp(width,blockDim[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3312
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:1: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3313
+    Length:          155
+    ReplacementText: "dpct::get_default_queue().submit(\n\t  [&](sycl::handler &cgh) {\n\t    auto cuda_mat_ct4 = cuda_mat[0];\n\t    auto cuda_mat_ct5 = cuda_mat[1];\n\t    auto cuda_mat_ct6 = cuda_mat[2];\n\n\t    cgh.parallel_for(\n\t      sycl::nd_range<3>(gridDim * blockDim, blockDim), \n\t      [=](sycl::nd_item<3> item_ct1) {\n\t        gpuPerspectiveWarp(input, output, width, height, cuda_mat_ct4, cuda_mat_ct5, cuda_mat_ct6, item_ct1);\n\t      });\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3468
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3473
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:2: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3486
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3509
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3539
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3572
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3587
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3702
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3740
+    Length:          29
+    ReplacementText: '17'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3817
+    Length:          21
+    ReplacementText: '1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3869
+    Length:          6
+    ReplacementText: 'sycl::float3'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3978
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          3992
+    Length:          4
+    ReplacementText: 1, 8, 8
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4007
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4020
+    Length:          51
+    ReplacementText: '1, iDivUp(height,blockDim[1]), iDivUp(width,blockDim[2])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4077
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:3: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4078
+    Length:          155
+    ReplacementText: "dpct::get_default_queue().submit(\n\t  [&](sycl::handler &cgh) {\n\t    auto cuda_mat_ct4 = cuda_mat[0];\n\t    auto cuda_mat_ct5 = cuda_mat[1];\n\t    auto cuda_mat_ct6 = cuda_mat[2];\n\n\t    cgh.parallel_for(\n\t      sycl::nd_range<3>(gridDim * blockDim, blockDim), \n\t      [=](sycl::nd_item<3> item_ct1) {\n\t        gpuPerspectiveWarp(input, output, width, height, cuda_mat_ct4, cuda_mat_ct5, cuda_mat_ct6, item_ct1);\n\t      });\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4233
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4238
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1010:4: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4251
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4274
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4299
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4327
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4342
+    Length:          6
+    ReplacementText: 'sycl::float4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4456
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4830
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4855
+    Length:          11
+    ReplacementText: int
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4883
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          4898
+    Length:          6
+    ReplacementText: 'sycl::uchar4'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          5012
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Offset:          5386
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+    Digest:          d97d826e2c852dc9f8f7bd70bbaa88b3
+DpctVersion:     2021.4.0
+MainHelperFileName: dpct
+USMLevel:        restricted
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+      FeatureName:     dev_mgr
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+      FeatureName:     device_ext
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+      FeatureName:     exception_handler
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/intel/workspace/jetson-utils/cuda/cudaWarp-affine.cu'
+      FeatureName:     get_tid
+      SubFeatureMap:   {}
+  dpct.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+...

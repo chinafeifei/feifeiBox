@@ -1,0 +1,15 @@
+CPU,11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz, 8x3.06 GHz, Max cache size 12288 K
+OS,Windows 10 Enterprise  (Win64)
+Computer,xxx-MOBL1
+Library,ippIP AVX-512F/CD/BW/DQ/VL (k0), 2021.4 (r0xa677c254), Sep  3 2021
+Library,ippSP AVX-512F/CD/BW/DQ/VL (k0), 2021.4 (r0xa677c254), Sep  3 2021
+Start,Fri Jun 24 17:04:36 2022
+function,Parm1,Parm2,Parm3,Parm4,Parm5,Parm6,Parm7,Parm8,Comment,Clocks,per,Time (usec),MFlops
+ippiMinMax,8u,C3R,ImageSize,-,-,-,-,-,parmNames,-,-,-,-
+ippiMinMax,8u,C3R,1920x1080,-,-,-,-,-,nLps=54,0.0891,pxch,181,-
+ippiResizeCubic,8u,C3R,dstSize,srcSize,M,N,-,-,parmNames,-,-,-,-
+ippiResizeCubic,8u,C3R,1920x1080,3840x2160,1,2,-,-,nLps=8,2.71,pxch,5.51e+03,-
+ippiResizeLinear,8u,C3R,dstSize,srcSize,M,N,-,-,parmNames,-,-,-,-
+ippiResizeLinear,8u,C3R,1920x1080,3840x2160,1,2,-,-,nLps=8,1.59,pxch,3.23e+03,-
+ipprFilterMedian,8u,C1V,volume,maskVolume,-,-,-,-,parmNames,-,-,-,-
+ipprFilterMedian,8u,C1V,256x256x256,InMem,3x3x3,-,-,-,nLps=8,6.66,pxch,3.65e+04,-
