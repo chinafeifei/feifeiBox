@@ -15,7 +15,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'PWD'
+        sh '`PWD`'
       }
     }
 
