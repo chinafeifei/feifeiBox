@@ -15,9 +15,14 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh '/var/jenkins_home/workspace/feifeiBox_master/test.sh'
+        sh 'ls'
+        sh 'chmod +x test.sh'
+        sh './test.sh'
       }
     }
 
+  }
+  environment {
+    CI = 'true'
   }
 }
