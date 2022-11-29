@@ -2,7 +2,8 @@
 
 set -e
 
-WORKDIR=$(find ~  -name 'applications.industrial.machine-vision.computer-vision-optimization-toolkit-pv_rc1' | head -n 1)
+#WORKDIR=$(find ~  -name 'applications.industrial.machine-vision.computer-vision-optimization-toolkit-pv_rc1' | head -n 1)
+WORKDIR=$(find ~  -name 'covi_feifei' | head -n 1)
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/intel/oneapi/ipp/latest/lib/intel64/tl/tbb
 source /opt/intel/oneapi/setvars.sh
 source /opt/intel/openvino_2021.4.752/bin/setupvars.sh
